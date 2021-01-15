@@ -18,3 +18,22 @@ function largest($array) {
 function removeDupes($array) {
     return array_unique($array);
 }
+
+function distribute($array) {
+   $holdKeys = removeDupes($array);
+   $holdValues = array();
+   $count = 0;
+   foreach ($holdKeys as $value) {
+       foreach ($array as $item) {
+           if($value == $item) {
+              $count++;
+           }
+       }
+       $holdValues[] = $count;
+       $count = 0;
+   }
+
+   $associative = array_combine($holdKeys, $holdValues);
+   ksort($associative);
+   return $associative;
+}

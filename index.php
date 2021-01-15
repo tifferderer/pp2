@@ -37,6 +37,10 @@ $new = removeDupes($numbers);
 echo "<p>No Dupes:</p>";
 printArr($new);
 
+$combine = distribute($numbers);
+echo "<p>New Associated Array: </p>";
+echo var_dump($combine);
+
 ?>
 
 </body>
