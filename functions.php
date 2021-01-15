@@ -14,3 +14,7 @@ function largest($array) {
     }
     return $temp;
 }
+
+function removeDupes($array) {
+    return array_unique($array);
+}

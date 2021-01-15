@@ -32,6 +32,11 @@ printArr($numbers);
 
 $max = largest($numbers);
 echo "<p>Largest number: $max</p>";
+
+$new = removeDupes($numbers);
+echo "<p>No Dupes:</p>";
+printArr($new);
+
 ?>
 
 </body>
