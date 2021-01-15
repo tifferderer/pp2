@@ -29,6 +29,9 @@ echo "<h1>PHP Array Practice</h1>";
 $numbers = array(7, 9, 8, 9, 8, 8, 6);
 
 printArr($numbers);
+
+$max = largest($numbers);
+echo "<p>Largest number: $max</p>";
 ?>
 
 </body>
